@@ -4,6 +4,7 @@ import { useTitleScript } from "../../../scripts/Title";
 
 type Props = {
   lang: number;
+  isDesktop: boolean;
 };
 const Time = (props: Props) => {
   const title = useTitleScript();

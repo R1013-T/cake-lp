@@ -41,16 +41,16 @@ const Main = () => {
       {isDesktop ? (
         <article className="my-3 grid w-full grid-cols-main gap-3">
           <aside className="flex flex-col justify-between">
-            <Time lang={lang} />
-            <Size lang={lang} />
+            <Time lang={lang} isDesktop={isDesktop} />
+            <Size lang={lang} isDesktop={isDesktop} innerWidth={width} />
           </aside>
           <CakeList lang={lang} isDesktop={isDesktop} />
         </article>
       ) : (
         <article className="my-3 w-full">
-          <aside className="mb-3 flex justify-between">
-            <Time lang={lang} />
-            <Size lang={lang} />
+          <aside className="mb-3">
+            <Time lang={lang} isDesktop={isDesktop} />
+            <Size lang={lang} isDesktop={isDesktop} innerWidth={width} />
           </aside>
           <CakeList lang={lang} isDesktop={isDesktop} />
         </article>
