@@ -6,7 +6,7 @@ const logoFontStyle = {
 const Header = () => {
   return (
     <header className="fixed z-10 flex h-10 w-full items-center justify-between px-5">
-      <p className="text-xs" style={logoFontStyle}>
+      <p className="text-xs text-blue" style={logoFontStyle}>
         Petit Cake
       </p>
     </header>

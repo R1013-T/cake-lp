@@ -5,15 +5,14 @@ import { useTitleScript } from "../../../scripts/Title";
 type Props = {
   lang: number;
 };
-const Time = (props: Props) => {
+const Contact = (props: Props) => {
   const title = useTitleScript();
 
   return (
-    <section className="border border-teal-500">
-      <Title title={title.time[props.lang]} />
-      <p>Time</p>
+    <section className="w-otherMenu border border-teal-500">
+      <Title title={title.contact[props.lang]} />
     </section>
   );
 };
 
-export default Time;
+export default Contact;
