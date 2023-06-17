@@ -8,6 +8,15 @@ module.exports = {
 				// 	4F709C
 				// 	213555
 			},
+			height: {
+				'top': 'calc(40vh)',
+			},
+			width: {
+				'otherMenu': 'calc(50% - 6px)',
+			},
+			gridTemplateColumns:{
+				'main': '200px 1fr'
+			}
 		},
 	},
 	plugins: [],
