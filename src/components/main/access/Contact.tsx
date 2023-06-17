@@ -13,7 +13,7 @@ const Contact = (props: Props) => {
     <section
       className={`${
         props.isDesktop ? "w-otherMenu" : "mb-4 w-full"
-      } border border-teal-500`}
+      } h-52 border border-teal-500`}
     >
       <Title title={title.contact[props.lang]} />
     </section>

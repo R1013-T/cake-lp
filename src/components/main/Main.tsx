@@ -72,7 +72,7 @@ const Main = () => {
           <Contact lang={lang} isDesktop={isDesktop} />
         </article>
       ) : (
-        <article className="">
+        <article>
           <Location lang={lang} isDesktop={isDesktop} />
           <Contact lang={lang} isDesktop={isDesktop} />
         </article>
