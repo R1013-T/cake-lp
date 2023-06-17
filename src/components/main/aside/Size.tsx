@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Title from "../Title";
 import { useTitleScript } from "../../../scripts/Title";
 import { useSizeScript } from "../../../scripts/Size";
-import lang from "../Lang";
 
 type Props = {
   lang: number;

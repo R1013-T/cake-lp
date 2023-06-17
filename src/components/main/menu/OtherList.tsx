@@ -6,12 +6,17 @@ import Title from "../Title";
 type Props = {
   name: string;
   lang: number;
+  isDesktop: boolean;
 };
 const OtherList = (props: Props) => {
   const title = useTitleScript();
 
   return (
-    <section className="w-otherMenu border border-teal-500">
+    <section
+      className={`${
+        props.isDesktop ? "w-otherMenu" : "mb-4 w-full"
+      } border border-teal-500`}
+    >
       <Title
         title={
           props.name === "drink"

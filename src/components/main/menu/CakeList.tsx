@@ -2,7 +2,6 @@ import CakeItem from "./CakeItem";
 import React from "react";
 import Title from "../Title";
 import { useTitleScript } from "../../../scripts/Title";
-import lang from "../Lang";
 
 type Props = {
   lang: number;

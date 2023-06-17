@@ -4,13 +4,18 @@ import Title from "../Title";
 
 type Props = {
   lang: number;
+  isDesktop: boolean;
 };
 
 const Location = (props: Props) => {
   const title = useTitleScript();
 
   return (
-    <section className="w-otherMenu border border-teal-500">
+    <section
+      className={`${
+        props.isDesktop ? "w-otherMenu" : "mb-4 w-full"
+      } border border-teal-500`}
+    >
       <Title title={title.location[props.lang]} />
     </section>
   );

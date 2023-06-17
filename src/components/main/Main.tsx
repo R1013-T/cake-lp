@@ -55,14 +55,28 @@ const Main = () => {
           <CakeList lang={lang} isDesktop={isDesktop} />
         </article>
       )}
-      <article className="mb-3 flex justify-between">
-        <OtherList name="drink" lang={lang} />
-        <OtherList name="other" lang={lang} />
-      </article>
-      <article className="flex justify-between">
-        <Location lang={lang} />
-        <Contact lang={lang} />
-      </article>
+      {isDesktop ? (
+        <article className="mb-3 flex justify-between">
+          <OtherList name="drink" lang={lang} isDesktop={isDesktop} />
+          <OtherList name="other" lang={lang} isDesktop={isDesktop} />
+        </article>
+      ) : (
+        <article className="mb-3">
+          <OtherList name="drink" lang={lang} isDesktop={isDesktop} />
+          <OtherList name="other" lang={lang} isDesktop={isDesktop} />
+        </article>
+      )}
+      {isDesktop ? (
+        <article className="flex justify-between">
+          <Location lang={lang} isDesktop={isDesktop} />
+          <Contact lang={lang} isDesktop={isDesktop} />
+        </article>
+      ) : (
+        <article className="">
+          <Location lang={lang} isDesktop={isDesktop} />
+          <Contact lang={lang} isDesktop={isDesktop} />
+        </article>
+      )}
     </main>
   );
 };
