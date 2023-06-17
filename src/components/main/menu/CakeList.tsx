@@ -22,14 +22,12 @@ const CakeList = (props: Props) => {
         } `}
       >
         {CAKE_LIST.map((cakeNumber) => (
-          <>
-            <CakeItem
-              key={cakeNumber}
-              cakeNumber={cakeNumber}
-              lang={props.lang}
-              isDesktop={props.isDesktop}
-            />
-          </>
+          <CakeItem
+            key={cakeNumber}
+            cakeNumber={cakeNumber}
+            lang={props.lang}
+            isDesktop={props.isDesktop}
+          />
         ))}
         <div className={`${props.isDesktop ? "w-52" : "w-44"}`}></div>
         <div className={`${props.isDesktop ? "w-52" : "w-44"}`}></div>
