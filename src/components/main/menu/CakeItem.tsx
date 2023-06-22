@@ -24,13 +24,13 @@ const CakeItem = (props: Props) => {
 
   // if (typeof cakeScript === "object") {
   return (
-    <div className={`py-3 ${props.isDesktop ? "w-52" : "w-28"}`}>
+    <div className={`py-3 ${props.isDesktop ? "w-52" : "w-full"}`}>
       {typeof cakeScript === "object" ? (
         <>
           <img
             src={`images/cake/${props.cakeNumber}.png`}
             alt={cakeName}
-            className={`${props.isDesktop ? "w-48" : "w-28"}`}
+            className={`${props.isDesktop ? "w-48" : "w-full"}`}
           />
           <div className="mt-2 px-2 font-body">
             <div
